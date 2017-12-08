@@ -2,6 +2,19 @@
 
 A proxy component that provides access to the Companies House API so that multiple clients can connect via this proxy rather than connecting directly to Companies House
 
+The proxy ensures that only GET requests are carried out. All other types of request will result in a 404 error.
+
+There is a 'health' provided at:
+
+http://proxyaddress/health
+
+All other routes are available at:
+
+http://proxyaddress/companieshouseapiroute
+
+e.g. http://localhost:5000/company/02456473
+
+For the Companies House API documentation please see: https://developer.companieshouse.gov.uk/document/docs/index.html
 
 ## Prerequisites
 
