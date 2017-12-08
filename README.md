@@ -5,13 +5,11 @@ A proxy component that provides access to the Companies House API so that multip
 The proxy ensures that only GET requests are carried out. All other types of request will result in a 404 error.
 
 There is a 'health' provided at:
-
-http://proxyaddress/health
+http://proxy_address/health
+e.g. http://localhost:5000/health
 
 All other routes are available at:
-
-http://proxyaddress/companieshouseapiroute
-
+http://proxy_address/companies_house_api_route
 e.g. http://localhost:5000/company/02456473
 
 For the Companies House API documentation please see: https://developer.companieshouse.gov.uk/document/docs/index.html
