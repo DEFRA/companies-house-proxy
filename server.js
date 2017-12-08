@@ -28,7 +28,7 @@ server.route([
     }
   },
   {
-    method: '*',
+    method: 'GET',
     path: '/{path*}',
     handler: {
       proxy: {
