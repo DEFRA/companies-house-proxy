@@ -6,6 +6,8 @@ const config = module.exports = {}
 
 config.port = process.env.PORT || 5000
 
+config.LOG_LEVEL = process.env.LOG_LEVEL
+
 config.COMPANIES_HOUSE_SERVICE_PROTOCOL = process.env.COMPANIES_HOUSE_SERVICE_PROTOCOL
 config.COMPANIES_HOUSE_SERVICE_HOST = process.env.COMPANIES_HOUSE_SERVICE_HOST
 config.COMPANIES_HOUSE_API_KEY = process.env.COMPANIES_HOUSE_API_KEY
