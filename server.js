@@ -43,7 +43,7 @@ server.route([
             }
           }
         },
-        agent: new HttpsProxyAgent(config.http_proxy),
+        agent: (Config.http_proxy) ? new HttpsProxyAgent(Config.http_proxy) : undefined,
         onResponse: async (err, res, request, reply, settings, ttl) => {
           if (err) {
             console.error('Error restrieving data: ', err)
